@@ -1,0 +1,24 @@
+<table id='tabla-peliculas'>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>Tipo</th>
+      <th>Fecha de Estreno</th>
+      <th>Cantidad de Público</th>
+      <th>Foto de Pelicula</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pelicula of listadoPeliculas">
+      <td>{{pelicula.id}}</td>
+      <td>{{pelicula.nombre}}</td>
+      <td>{{pelicula.tipo}}</td>
+      <td>{{pelicula.fechaDeEstreno}}</td>
+      <td>{{pelicula.cantidadDePublico}}</td>
+      <td>{{pelicula.fotoDePelicula}}</td>
+      <td><button type="button">Detalle</button></td>
+    </tr>
+
+  </tbody>
+</table>
