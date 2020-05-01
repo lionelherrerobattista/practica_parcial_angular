@@ -1,0 +1,26 @@
+<div class='detalle-pelicula'>
+  <div>
+    <label>Id:</label>
+    <input matInput value={{peliculaSeleccionada.id}}>
+  </div>
+  <div>
+    <label>Nombre:</label>
+    <input matInput value={{peliculaSeleccionada.nombre}}>
+  </div>
+  <div>
+    <label>Tipo:</label>
+    <input matInput value={{peliculaSeleccionada.tipo}}>
+  </div>
+  <div>
+    <label>Fecha de Estreno:</label>
+    <input matInput value={{peliculaSeleccionada.fechaDeEstreno}}>
+  </div>
+  <div>
+    <label>Cantidad de Público:</label>
+    <input matInput value={{peliculaSeleccionada.cantidadDePublico}}>
+  </div>
+  <div>
+    <img [src]="peliculaSeleccionada.fotoDePelicula">
+  </div>
+</div>
+

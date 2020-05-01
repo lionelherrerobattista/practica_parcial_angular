@@ -17,7 +17,7 @@
       <td>{{pelicula.fechaDeEstreno}}</td>
       <td>{{pelicula.cantidadDePublico}}</td>
       <td><img [src]="pelicula.fotoDePelicula"></td>
-      <td><button type="button">Detalle</button></td>
+      <td><button type="button" (click)="MostrarDetalles(pelicula)">Detalle</button></td>
     </tr>
 
   </tbody>

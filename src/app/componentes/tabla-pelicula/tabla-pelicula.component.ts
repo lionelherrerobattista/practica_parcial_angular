@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Peliculas } from 'src/app/clases/peliculas';
 
 @Component({
@@ -7,6 +7,8 @@ import { Peliculas } from 'src/app/clases/peliculas';
   styleUrls: ['./tabla-pelicula.component.css']
 })
 export class TablaPeliculaComponent implements OnInit {
+
+  @Output() peliculaSeleccionada: EventEmitter<any>= new EventEmitter<any>();
 
   listadoPeliculas:Peliculas[] = [
     {id: 1, nombre: "Rocky I", tipo:'otros', fechaDeEstreno:'01/01/1976', cantidadDePublico: 2000000, fotoDePelicula:'/assets/img/rock1.jpg' },
@@ -17,6 +19,10 @@ export class TablaPeliculaComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  MostrarDetalles(pelicula:Peliculas) {
+    this.peliculaSeleccionada.emit(pelicula);
   }
 
 }

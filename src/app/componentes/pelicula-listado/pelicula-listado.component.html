@@ -1,4 +1,5 @@
 
 
-<app-tabla-pelicula></app-tabla-pelicula>
+<app-tabla-pelicula (peliculaSeleccionada)="TomarPeliculaParaMostrar($event)"></app-tabla-pelicula>
+<app-detalle-pelicula [peliculaSeleccionada]="peliculaParaMostrar"></app-detalle-pelicula>
 

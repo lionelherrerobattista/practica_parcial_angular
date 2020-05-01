@@ -1,0 +1,15 @@
+
+.detalle-pelicula {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  background-color: blueviolet;
+  border-style: double;
+  border-radius: 50px;
+  padding: 4vh 4vw 4vh 4vw;
+  margin: 5vh 5vw 5vh 5vw;
+}
+

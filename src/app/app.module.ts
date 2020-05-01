@@ -17,6 +17,8 @@ import {MatTableModule} from '@angular/material/table';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
+import { DetallePeliculaComponent } from './componentes/detalle-pelicula/detalle-pelicula.component';
+import {MatInputModule} from '@angular/material/input';
 
 
 
@@ -29,7 +31,8 @@ import {MatMenuModule} from '@angular/material/menu';
     ActorAltaComponent,
     ActorListadoComponent,
     PeliculaListadoComponent,
-    TablaPeliculaComponent
+    TablaPeliculaComponent,
+    DetallePeliculaComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import {MatMenuModule} from '@angular/material/menu';
     MatToolbarModule,
     MatButtonModule,
     MatMenuModule,
+    MatInputModule,
 
   ],
   providers: [],
