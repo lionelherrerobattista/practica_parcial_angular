@@ -1,1 +1,19 @@
-<p>bienvenido works!</p>
+<mat-toolbar>
+  <span>Peliculas App</span>
+  <button mat-button routerLink="busqueda">Busqueda</button>
+  <button mat-button [matMenuTriggerFor]="peliculas">Peliculas</button>
+  <mat-menu #peliculas="matMenu">
+    <button mat-menu-item routerLink="peliculas/alta">Alta</button>
+    <button mat-menu-item routerLink="peliculas/listado">Listado</button>
+  </mat-menu>
+  <button mat-button [matMenuTriggerFor]="actor">Actor</button>
+  <mat-menu #actor="matMenu">
+    <button mat-menu-item routerLink="actor/alta">Alta</button>
+    <button mat-menu-item routerLink="actor/listado">Listado</button>
+  </mat-menu>
+
+</mat-toolbar>
+<div id='titulo-principal'>
+  <h1>Bienvenido a Películas</h1>
+</div>
+

@@ -12,7 +12,13 @@ import { PeliculaListadoComponent } from './componentes/pelicula-listado/pelicul
 import { TablaPeliculaComponent } from './componentes/tabla-pelicula/tabla-pelicula.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+//Material
 import {MatTableModule} from '@angular/material/table';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
+
+
 
 @NgModule({
   declarations: [
@@ -30,6 +36,10 @@ import {MatTableModule} from '@angular/material/table';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTableModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatMenuModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
